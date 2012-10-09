@@ -284,6 +284,30 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\cmdTestDecorate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\cmdTestFaceWithHoleSample.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\cmdTestHistoryDivide.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\cmdTestHistoryExample.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\cmdTestTrimmedPlaneSample.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\cmdTestUVMesh.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration

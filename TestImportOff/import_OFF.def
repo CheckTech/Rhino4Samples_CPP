@@ -1,0 +1,6 @@
+; import_OFF.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "import_OFF"
+
+EXPORTS
+    ; Explicit exports can go here

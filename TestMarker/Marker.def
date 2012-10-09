@@ -1,0 +1,6 @@
+; Marker.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "Marker"
+
+EXPORTS
+    ; Explicit exports can go here
