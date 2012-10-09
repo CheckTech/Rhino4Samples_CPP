@@ -1,0 +1,6 @@
+; TestObjectUserData.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestObjectUserData"
+
+EXPORTS
+    ; Explicit exports can go here
