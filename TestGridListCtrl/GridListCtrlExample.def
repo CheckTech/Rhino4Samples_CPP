@@ -1,0 +1,6 @@
+; GridListCtrlExample.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "GridListCtrlExample"
+
+EXPORTS
+    ; Explicit exports can go here

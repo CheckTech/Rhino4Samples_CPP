@@ -1,0 +1,6 @@
+; FalseColorAnalysisExample.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "FalseColorAnalysisExample"
+
+EXPORTS
+    ; Explicit exports can go here

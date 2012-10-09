@@ -1,0 +1,6 @@
+; RhinoDockBar.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "RhinoDockBar"
+
+EXPORTS
+    ; Explicit exports can go here
