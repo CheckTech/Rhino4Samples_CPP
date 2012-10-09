@@ -1,0 +1,6 @@
+; TestAnimator.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestAnimator"
+
+EXPORTS
+    ; Explicit exports can go here
