@@ -1,0 +1,29 @@
+/////////////////////////////////////////////////////////////////////////////
+// RhinoMark.idl : type library source for RhinoMark.rhp
+// This file will be processed by the MIDL compiler to produce the
+// type library (RhinoMark.tlb).
+
+#include "olectl.h"
+[ uuid(A76F32AC-265B-452A-9374-A0E7BB4F0C06), version(1.0) ]
+library RhinoMark
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	//  Primary dispatch interface for RhinoMarkObject
+		
+	[ uuid(48F21CC0-83B6-4B34-AD5E-D5A91105DAF9) ]
+	dispinterface IRhinoMarkObject
+	{
+		properties:
+		methods:
+      [id(1), helpstring("method DoRhinoMark")] ULONG DoRhinoMark(LONG frame_count, VARIANT_BOOL bFreeze);
+  };
+
+	//  Class information for RhinoMarkObject
+
+	[ uuid(38CB8046-C11A-45D8-A41C-37C7472FB6F5) ]
+	coclass RhinoMarkObject
+	{
+		[default] dispinterface IRhinoMarkObject;
+	};
+};

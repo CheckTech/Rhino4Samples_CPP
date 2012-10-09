@@ -1,0 +1,29 @@
+﻿Option Explicit
+
+Sub TestRhinoMark
+  
+  Const Rebuild = False
+  Const NoRebuild = True
+  
+  Dim objPlugIn, nDelta, sDelta, nFrames, bDisplayList
+  
+  On Error Resume Next
+  Set objPlugIn = Rhino.GetPluginObject("RhinoMark")
+  If Err Then
+    MsgBox Err.Description
+    Exit Sub
+  End If
+
+  nFrames = 100
+  bDisplayList = NoRebuild
+  nDelta = objPlugIn.DoRhinoMark(nFrames, bDisplayList)
+ 
+  If nDelta > 0 Then
+    sDelta = FormatNumber(nDelta / 1000.0, 2, True)
+    Call Rhino.Print("Time to regen viewport " & nFrames & " times = " & sDelta & " seconds.")
+  End If
+
+End Sub
+
+' Run it...
+TestRhinoMark
