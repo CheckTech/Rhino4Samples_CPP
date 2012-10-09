@@ -1,0 +1,6 @@
+; TestAttributeUserData.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestAttributeUserData"
+
+EXPORTS
+    ; Explicit exports can go here

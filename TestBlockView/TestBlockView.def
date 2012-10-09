@@ -1,0 +1,6 @@
+; TestBlockView.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestBlockView"
+
+EXPORTS
+    ; Explicit exports can go here

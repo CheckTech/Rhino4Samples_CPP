@@ -1,0 +1,6 @@
+; TestDocUserText.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestDocUserText"
+
+EXPORTS
+    ; Explicit exports can go here
