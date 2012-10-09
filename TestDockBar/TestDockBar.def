@@ -1,0 +1,6 @@
+; TestDockBar.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestDockBar"
+
+EXPORTS
+    ; Explicit exports can go here

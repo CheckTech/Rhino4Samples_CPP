@@ -1,0 +1,6 @@
+; TestAssociationData.def : Declares the module parameters for the DLL.
+
+; LIBRARY      "TestAssociationData"
+
+EXPORTS
+    ; Explicit exports can go here
