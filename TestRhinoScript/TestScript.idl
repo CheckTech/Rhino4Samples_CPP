@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////////////////////////////////
+// TestScript.idl : type library source for TestScript.rhp
+// This file will be processed by the MIDL compiler to produce the
+// type library (TestScript.tlb).
+
+#include "olectl.h"
+
+[ 
+  uuid(E1BE93A5-EE6A-473E-8877-39A10B9BE0CF), 
+  version(1.0), 
+  helpstring("TestScript 1.0 Type Library")
+]
+
+library TestScript
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for TestScriptObject
+		
+	[ uuid(0C171EB5-71BE-4E8B-AD17-FAE2405AB502) ]
+	dispinterface ITestScriptObject
+	{
+		properties:
+		methods:
+      [id(1), helpstring("method About")] void About(void);
+      [id(2), helpstring("method Multiply")] DOUBLE Multiply(DOUBLE a, DOUBLE b);
+      [id(3), helpstring("method AddPoint")] VARIANT AddPoint(VARIANT* vaPoint);
+      [id(4), helpstring("method AddPointCloud")] VARIANT AddPointCloud(VARIANT* vaPointCloud);
+  };
+
+	//  Class information for TestScriptObject
+
+	[ uuid(C9ADE40C-65B6-44AA-A60F-906AC7303150) ]
+	coclass TestScriptObject
+	{
+		[default] dispinterface ITestScriptObject;
+	};
+};
