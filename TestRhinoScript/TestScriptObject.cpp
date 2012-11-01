@@ -37,6 +37,7 @@ BEGIN_DISPATCH_MAP(CTestScriptObject, CCmdTarget)
   DISP_FUNCTION_ID(CTestScriptObject, "Multiply", dispidMultiply, Multiply, VT_R8, VTS_R8 VTS_R8)
   DISP_FUNCTION_ID(CTestScriptObject, "AddPoint", dispidAddPoint, AddPoint, VT_VARIANT, VTS_PVARIANT)
   DISP_FUNCTION_ID(CTestScriptObject, "AddPointCloud", dispidAddPointCloud, AddPointCloud, VT_VARIANT, VTS_PVARIANT)
+  DISP_FUNCTION_ID(CTestScriptObject, "TestByReference", dispidTestByReference, TestByReference, VT_VARIANT, VTS_PVARIANT)
 END_DISPATCH_MAP()
 
 // Note: we add support for IID_ITestScriptObject to support typesafe binding
@@ -123,6 +124,29 @@ VARIANT CTestScriptObject::AddPointCloud(VARIANT* vaPointCloud)
       }
     }
   }
+
+  return vaResult;
+}
+
+VARIANT CTestScriptObject::TestByReference(VARIANT* vaValue)
+{
+	VARIANT vaResult;
+	VariantInit(&vaResult);
+  V_VT(&vaResult) = VT_NULL;
+
+  if( 0 == vaValue )
+    return vaResult;
+
+  bool b = false;
+  if( !VariantToBoolean(*vaValue, b) )
+    return vaResult;
+
+  VariantClear( vaValue );
+  V_VT(vaValue) = VT_BOOL | VT_BYREF;
+  *(vaValue->pboolVal) = b ? VARIANT_FALSE : VARIANT_TRUE; // invert
+
+  V_VT(&vaResult) = VT_BOOL;
+  vaResult.boolVal = b ? VARIANT_TRUE : VARIANT_FALSE;
 
   return vaResult;
 }

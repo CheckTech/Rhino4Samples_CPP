@@ -1,0 +1,22 @@
+﻿Option Explicit
+
+Sub TestScript
+  
+  Dim plugin, value, result
+  
+  On Error Resume Next
+  Set plugin = Rhino.GetPluginObject("TestScript")
+  If Err Then
+    MsgBox Err.Description
+    Exit Sub
+  End If
+  
+  value = False
+  result = plugin.TestByReference(value)
+  
+  Rhino.Print "Result = " & CStr(result)
+  Rhino.Print "Value = " & CStr(value)
+  
+End Sub
+    
+  

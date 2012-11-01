@@ -6,7 +6,7 @@
 
 
  /* File created by MIDL compiler version 6.00.0366 */
-/* at Tue Feb 16 08:36:06 2010
+/* at Thu Nov 01 09:22:40 2012
  */
 /* Compiler settings for .\TestScript.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)

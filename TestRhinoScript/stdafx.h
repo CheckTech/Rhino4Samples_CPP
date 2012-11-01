@@ -19,7 +19,7 @@
 #endif
 
 // Rhino SDK Preamble
-#include "C:\Program Files\Rhino 4.0 SDK\Inc\RhinoSdkStdafxPreamble.h"
+#include "C:\Program Files (x86)\Rhino 4.0 SDK\Inc\RhinoSdkStdafxPreamble.h"
 
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// some CString constructors will be explicit
 
@@ -50,7 +50,7 @@
 //
 
 // Rhino Plug-in
-#include "C:\Program Files\Rhino 4.0 SDK\Inc\RhinoSdk.h"
+#include "C:\Program Files (x86)\Rhino 4.0 SDK\Inc\RhinoSdk.h"
 
 #if defined( RHINO_DEBUG_PLUGIN )
 // Now that all the system headers are read, we can

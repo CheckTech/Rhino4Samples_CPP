@@ -20,6 +20,7 @@ protected:
 
   enum 
   {
+    dispidTestByReference = 5L,
     dispidAddPointCloud = 4L,
     dispidAddPoint = 3L,
     dispidMultiply = 2L,
@@ -30,6 +31,7 @@ protected:
   DOUBLE Multiply(DOUBLE a, DOUBLE b);
   VARIANT AddPoint(VARIANT* vaPoint);
   VARIANT AddPointCloud(VARIANT* vaPointCloud);
+  VARIANT TestByReference(VARIANT* vaValue);
 };
 
 

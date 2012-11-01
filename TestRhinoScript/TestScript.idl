@@ -27,6 +27,7 @@ library TestScript
       [id(2), helpstring("method Multiply")] DOUBLE Multiply(DOUBLE a, DOUBLE b);
       [id(3), helpstring("method AddPoint")] VARIANT AddPoint(VARIANT* vaPoint);
       [id(4), helpstring("method AddPointCloud")] VARIANT AddPointCloud(VARIANT* vaPointCloud);
+      [id(5), helpstring("method TestByReference")] VARIANT TestByReference(VARIANT* vaValue);
   };
 
 	//  Class information for TestScriptObject
