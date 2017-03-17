@@ -1,6 +1,10 @@
-Rhino 4.0 C++ SDK Samples
+Rhino 4.0 C++ SDK Samples - OLD
 =========================
 ![Rhino](https://lh6.googleusercontent.com/-pQtuyrwmcmg/TYtWECHGYNI/AAAAAAAAA7Y/rphjSmq1cuo/s200/Rhino_logo_wire.jpg)
+
+WARNING
+--------------------
+These samples are for an old version of [Rhino for Windows](www.rhino3d.com).  For the latest samples, see the [Rhino Developer Samples](https://github.com/mcneel/rhino-developer-samples) respository.  Other developer resources can be found at [developer.rhino3d.com](developer.rhino3d.com). 
 
 Building Samples
 --------------------
@@ -18,7 +22,7 @@ Getting Help
 
 Legal Stuff
 -----------
-Copyright © 2012 Robert McNeel & Associates. All Rights Reserved.
+Copyright Â© 2012 Robert McNeel & Associates. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
